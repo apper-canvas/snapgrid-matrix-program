@@ -1,3 +1,5 @@
+import initialCommentsData from '@/services/mockData/comments.json';
+
 const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
 class CommentService {
@@ -8,8 +10,7 @@ class CommentService {
 
   initializeData() {
     if (!localStorage.getItem(this.storageKey)) {
-      const initialComments = require('../mockData/comments.json');
-      localStorage.setItem(this.storageKey, JSON.stringify(initialComments));
+      localStorage.setItem(this.storageKey, JSON.stringify(initialCommentsData));
     }
   }
 
