@@ -1,15 +1,17 @@
+import usersData from '@/services/mockData/users.json';
+
 const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
 class UserService {
   constructor() {
     this.storageKey = 'snapgrid_users';
     this.currentUserKey = 'snapgrid_current_user';
-    this.initializeData();
+    this.initializeUsers();
   }
 
-  initializeData() {
+  initializeUsers() {
     if (!localStorage.getItem(this.storageKey)) {
-      const initialUsers = require('../mockData/users.json');
+      const initialUsers = usersData;
       localStorage.setItem(this.storageKey, JSON.stringify(initialUsers));
     }
     
