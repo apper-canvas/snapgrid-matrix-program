@@ -5,14 +5,19 @@ class StoryService {
     this.storageKey = 'snapgrid_stories';
     this.initializeData();
   }
-
-  initializeData() {
+async initializeData() {
     if (!localStorage.getItem(this.storageKey)) {
-      const initialStories = require('../mockData/stories.json');
-      localStorage.setItem(this.storageKey, JSON.stringify(initialStories));
+      try {
+        const storiesModule = await import('@/services/mockData/stories.json');
+        const initialStories = storiesModule.default;
+        localStorage.setItem(this.storageKey, JSON.stringify(initialStories));
+      } catch (error) {
+        console.error('Failed to load initial stories data:', error);
+        // Fallback to empty array if import fails
+        localStorage.setItem(this.storageKey, JSON.stringify([]));
+      }
     }
   }
-
   getData() {
     try {
       return JSON.parse(localStorage.getItem(this.storageKey)) || [];
