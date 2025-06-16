@@ -1,0 +1,37 @@
+[
+  {
+    "Id": 1,
+    "postId": 1,
+    "userId": "3",
+    "text": "Absolutely stunning view! 😍",
+    "timestamp": "2024-01-15T19:00:00.000Z"
+  },
+  {
+    "Id": 2,
+    "postId": 1,
+    "userId": "4",
+    "text": "I need to visit this place!",
+    "timestamp": "2024-01-15T19:15:00.000Z"
+  },
+  {
+    "Id": 3,
+    "postId": 2,
+    "userId": "2",
+    "text": "That coffee looks perfect ☕",
+    "timestamp": "2024-01-15T10:30:00.000Z"
+  },
+  {
+    "Id": 4,
+    "postId": 3,
+    "userId": "5",
+    "text": "Recipe please! 🙏",
+    "timestamp": "2024-01-14T21:00:00.000Z"
+  },
+  {
+    "Id": 5,
+    "postId": 4,
+    "userId": "3",
+    "text": "Perfect beach day weather!",
+    "timestamp": "2024-01-14T16:00:00.000Z"
+  }
+]

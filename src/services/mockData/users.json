@@ -1,0 +1,42 @@
+[
+  {
+    "Id": 1,
+    "username": "you",
+    "bio": "Living life one post at a time 📸",
+    "profilePic": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
+    "followers": 128,
+    "following": 95
+  },
+  {
+    "Id": 2,
+    "username": "naturelover",
+    "bio": "Adventure seeker 🏔️ Nature photographer",
+    "profilePic": "https://images.unsplash.com/photo-1494790108755-2616b612b3bb?w=150&h=150&fit=crop&crop=face",
+    "followers": 342,
+    "following": 201
+  },
+  {
+    "Id": 3,
+    "username": "techguru",
+    "bio": "Full-stack developer ⚡ Coffee enthusiast",
+    "profilePic": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
+    "followers": 567,
+    "following": 289
+  },
+  {
+    "Id": 4,
+    "username": "chefmaria",
+    "bio": "Home cook sharing delicious recipes 👩‍🍳",
+    "profilePic": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face",
+    "followers": 892,
+    "following": 156
+  },
+  {
+    "Id": 5,
+    "username": "beachbum",
+    "bio": "Sun, sand, and good vibes 🌊",
+    "profilePic": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face",
+    "followers": 234,
+    "following": 178
+  }
+]
