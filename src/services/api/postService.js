@@ -1,3 +1,5 @@
+import initialPostsData from '../mockData/posts.json';
+
 const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
 class PostService {
@@ -8,8 +10,7 @@ class PostService {
 
   initializeData() {
     if (!localStorage.getItem(this.storageKey)) {
-      const initialPosts = require('../mockData/posts.json');
-      localStorage.setItem(this.storageKey, JSON.stringify(initialPosts));
+      localStorage.setItem(this.storageKey, JSON.stringify(initialPostsData));
     }
   }
 
